@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f7f9f6; 
+    margin: 0;
+    padding: 0;
+    color: #2c3e31; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabeca {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20); 
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);
+}
+
+.titulo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.subtitulo {
+    font-size: 1.3rem;
+    margin-top: 12px;
+    color: #c8e6c9; 
+    font-style: italic;
+    opacity: 0.95;
+}
+
+.menu-producao {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #e0ebd3;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-producao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.menu-producao li {
+    margin: 5px 10px;
+}
+
+.menu-producao a {
+    display: block;
+    color: #388e3c;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+}
+
+.menu-producao a:hover {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    transform: scale(1.05);
+}
+
+.corpo {
+    max-width: 950px;
+    width: 90%;
+    background-color: #ffffff;
+    margin: 40px 0;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.texto-introducao {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #4a5d4e;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria-container {
+    margin-top: 20px;
+}
+
+.galeria-titulo {
+    color: #2e7d32;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cartao-imagem {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid #f0f4f1;
+    scroll-margin-top: 100px;
+}
+
+.cartao-imagem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(46, 125, 50, 0.12);
+}
+
+.cartao-imagem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.legenda {
+    padding: 20px;
+}
+
+.legenda h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #1b5e20;
+}
+
+.legenda p {
+    margin: 0;
+    font-size: 1rem;
+    color: #556b5a;
+    line-height: 1.5;
+}
